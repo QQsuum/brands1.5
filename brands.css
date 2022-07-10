@@ -1,0 +1,182 @@
+.brands {
+	background-color: #F2F2F2;
+	border: 1px solid transparent;
+}
+
+
+.brands__title {
+	padding: 16px;
+	font-family: TT Lakes;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #7E7E82;
+	background: -webkit-linear-gradient(left, 
+		rgba(242,242,242,1) 0%,
+		rgba(255,255,255,1) 100%,
+		rgba(125,185,232,1) 100%,
+		rgba(255,255,255,1) 100%); 
+}
+
+@media(min-width: 767px) {
+	.brands__title {
+		padding: 16px 24px;
+	}
+}
+
+@media(min-width: 767px) {
+	.brands__title {
+		padding: 16px 32px;
+	}
+}
+
+
+.brands__list {
+	margin-top: 16px;
+	display: flex;
+	list-style: none;
+	min-width: 0;
+	flex: 1 0 240px;
+}
+
+
+.brands__list img {
+	max-width: 60%;
+	max-height: 40px;
+}
+.brands__list img:nth-of-type(2n) {
+	width: 40px;
+	height: 40px;
+}
+
+@media (min-width: 767px) {
+	.brands__list {
+		margin-top: 24px;
+		flex: 1 0 224px;
+		flex-wrap: wrap;
+	}	
+}
+
+@media(min-width: 1120px) {
+	.brands__list {
+		margin-top: 24px;
+		flex: 1 0 240px;
+		flex-wrap: wrap;
+	}	
+}
+
+
+.brands__item {
+	margin-bottom: 16px;
+	height: 72px ;
+}
+
+@media(min-width: 767px) and (max-width: 1119px) {
+	.brands__item {
+		margin-left: 24px;
+	}
+	.brands__item:nth-child(n+7) {
+	display: none;
+	}
+}
+
+@media(min-width: 1120px) {
+	.brands__item {
+		margin-left: 32px;
+	}
+	.brands__item:nth-child(n+9) {
+	display: none;
+	}
+}
+
+
+.brands__item.brands__item--visible {
+	display: block ;}
+
+.brands__button {	
+	display: flex;
+	cursor: pointer;
+	background-color: transparent ;
+	border: none;
+	align-items: center;
+	background-color: white ;
+	width: 240px ;
+	height: 72px ;
+	padding: 0 16px;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+
+
+.swiper {
+	margin-left: 16px !important;
+	height: 130px;
+}
+
+.swiper-slide {
+	width: auto !important;
+}
+
+.swiper-pagination {
+	bottom: 0;
+}
+
+.swiper-pagination-bullet-active {
+	width:  20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #B5B6BC 
+}
+
+.swiper-horizontal>.swiper-pagination-bullets
+ .swiper-pagination-bullet,
+ .swiper-pagination-horizontal.swiper-pagination-bullets
+ .swiper-pagination-bullet {
+	background-color: #B5B6BC;
+}
+
+
+
+.show-more, .close-more {
+	display: none;
+	border: none;
+	background-color: transparent;
+	margin-top: 8px;
+	margin-bottom: 24px;
+	font-family: TT Lakes;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+}
+
+
+.show-more img, .close-more img {
+	margin-right: 17px;
+}
+
+.close-more img {
+	transform: rotate(180deg);
+}
+
+@media (min-width:  767px) {
+	.show-more, .close-more {
+		display: block;
+		margin-left: 24px;
+	}
+}
+
+@media (min-width:  1120px) {
+	.show-more, .close-more {
+		display: block;
+		margin-left: 32px;
+	}
+}
+
+.show-more--hidden, .close-more--hidden {
+	display: none;
+}
+
